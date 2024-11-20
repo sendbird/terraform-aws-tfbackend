@@ -12,6 +12,8 @@ resource "aws_dynamodb_table" "terraform_lock" {
     type = "S"
   }
 
+  tags = var.tags
+
   lifecycle {
     ignore_changes = [
       read_capacity,

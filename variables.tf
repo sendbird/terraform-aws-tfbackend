@@ -19,3 +19,8 @@ variable "dynamodb_write_capacity" {
   description = "The write_capacity value for the DynamoDB table to store lock object"
   default     = 5
 }
+
+variable "tags" {
+  description = "A map of tags"
+  default     = {}
+}
